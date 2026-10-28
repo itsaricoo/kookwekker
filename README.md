@@ -1,11 +1,11 @@
 # Kookwekker (Toon QML-app)
 
 Bestanden:
-- KookwekkerApp.qml: timerlogica (hoofdbestand, MOET <Mapnaam>App.qml heten), opslag, alarm, geluid
+- KookwekkerApp.qml: timerlogica (hoofdbestand), opslag, alarm
 - KookwekkerScreen.qml: hoofdscherm (lopende timers, snelkeuzes, eigen tijd)
 - KookwekkerAlarmScreen.qml: knipperend scherm als een timer afloopt
 - KookwekkerTile.qml: tile met de eerstvolgende afteltijd
-- drawables/kookwekker.png, sounds/alarm.wav
+- drawables/kookwekker.png
 
 Testen op een geroote Toon:
 1. Kopieer de map `kookwekker` naar `/qmf/qml/apps/kookwekker/` (zelfde plek als je andere apps). Via ToonStore: map `kookwekker-1.0.0` met symlink `kookwekker` -> `kookwekker-1.0.0`.
@@ -13,8 +13,7 @@ Testen op een geroote Toon:
 
 Opslag: actieve timers staan in `/mnt/data/tsc/kookwekker_userSettings.json`
 (werkt alleen als TSC schrijven via file:// toestaat, zoals bij andere apps).
-Verloopt geluid niet? Dan mist waarschijnlijk QtMultimedia; het visuele alarm werkt dan nog.
 
 Voor ToonStore: voeg `ToonRepo-entry.xml` toe aan ToonRepo.xml en lever de map aan als eigen app-repo.
 
-Let op: deze versie is voor Toon 2 (QtQuick 2.1 / Qt5). Voor Toon 1 moet `import QtQuick 2.1` terug naar `1.1` en QtMultimedia naar QtMultimediaKit 1.1.
+Let op: deze versie is voor Toon 2 (QtQuick 2.1 / Qt5).
