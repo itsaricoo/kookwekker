@@ -1,0 +1,13 @@
+<app>
+<name>Kookwekker</name>
+<version>1.0.0</version>
+<folder>kookwekker</folder>
+<description>Kookwekker met tot 4 timers, snelkeuzes (ei, thee, pasta...) en alarm.</description>
+<author>Nikksvibe</author>
+<skipautoupdate>no</skipautoupdate>
+<screenshots>0</screenshots>
+<firmwareminimum>5.0.00</firmwareminimum>
+<firmwaremaximum>9.99.9</firmwaremaximum>
+<toon2only>yes</toon2only>
+<allowdeletion>yes</allowdeletion>
+</app>
